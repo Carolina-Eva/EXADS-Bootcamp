@@ -1,0 +1,12 @@
+<div class="gallery-container">
+  <h2 class="gallery-title">{{ title }}</h2>
+  <div class="image-grid">
+    <a
+      *ngFor="let image of images"
+      [routerLink]="[image.link, image.param]"
+      class="gallery-link"
+    >
+      <img [src]="image.src" alt="Gallery Image" class="gallery-image" />
+    </a>
+  </div>
+</div>

@@ -1,0 +1,45 @@
+.progress-tracker {
+  display: flex;
+  justify-content: center;
+
+  .container {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    flex-direction: column;
+    background: white;
+    padding: 18px 30px;
+    border-radius: 8px;
+
+    .info {
+      font-weight: 700;
+      size: 19px;
+      color: #22daa8;
+      text-transform: uppercase;
+    }
+
+    .circle-container {
+      display: flex;
+      gap: 20px;
+      align-items: center;
+      justify-content: center;
+
+      .circle {
+        width: 18px;
+        height: 18px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #ddd;
+        color: #fff;
+        font-weight: bold;
+        transition: background-color 0.3s, transform 0.3s;
+
+        &.active {
+          background-color: #22daa8;
+        }
+      }
+    }
+  }
+}

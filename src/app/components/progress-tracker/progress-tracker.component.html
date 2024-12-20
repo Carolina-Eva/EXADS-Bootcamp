@@ -1,0 +1,12 @@
+<div class="progress-tracker">
+  <div class="container">
+    <div class="info">Question {{ currentStep }} of {{ totalSteps }}</div>
+    <div class="circle-container">
+      <div
+        *ngFor="let step of steps; let i = index"
+        class="circle"
+        [class.active]="i === currentStep - 1"
+      ></div>
+    </div>
+  </div>
+</div>
